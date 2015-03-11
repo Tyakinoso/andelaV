@@ -1,0 +1,112 @@
+ar com= "Software Engineer Trainee"
+var ping=function(){
+/*    for(i=0; i<com.length; i++){
+        console.log(com[i])
+    }
+};
+ping()*/
+for (var i in "Software Engineer Trainee"){
+    console.log(com[i])
+}
+}
+ping()
+
+> var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() {
+	var contactsLength = contacts.length;
+	for (var i = 0; i < contactsLength; i++) {
+		printPerson(contacts[i]);
+	}
+}
+function search(lastName) {
+    var contactsLength = contacts.length;
+    for (var i = 0; i < contactsLength; i++){
+        if (lastName === contacts[i].lastName) {
+            printPerson(contacts[i]);
+        }
+        else {
+            console.log("Contact not found in directory.");
+        };
+    };
+};
+search("Jones");
+
+
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() {
+	var contactsLength = contacts.length;
+	for (var i = 0; i < contactsLength; i++) {
+		printPerson(contacts[i]);
+	}
+}
+function search(lastName) {
+    var contactsLength = contacts.length;
+    for (var i = 0; i < contactsLength; i++){
+        if (lastName === contacts[i].lastName) {
+            printPerson(contacts[i]);
+        }
+        else {
+            console.log("Contact not found in directory.");
+        };
+    };
+};
+search("Jones");
+
+
+var compare = function(array)   {
+    var a = array[0];
+    var b = array[0];
+    for (var i = 1; i < array.length; i++)  {
+        if (array[i] > a)   {
+            a = array[i];
+        }
+    }
+    for (var i = 1; i < array.length; i++)  {
+        if (array[i] < b)   {
+            b = array[i];
+        }
+    }
+    c = [b, a];
+    return c;
+};
+
+x = [0,1,2,83,4];
+compare(x);
